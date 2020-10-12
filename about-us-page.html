@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Title</title>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="about-us.css">
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+</head>
+<body>
+  <header><div id="heading"><h1>About Us</h1></div>
+<nav id="nav-bar">
+  <div id="navigation">
+  <ul>
+  <li><a href="">Home</a></li>
+  <li><a href="F:\Blog-intern\blog-about us page.html">About</a></li>
+    <li><a href="insert-link.html">Contact</a></li>
+    <li>
+    <select name="list" id="list" accesskey="target">
+    <option value='none' selected>Choose your page</option>
+    <option value="#">Link1</option>
+    <option value="#">Link2</option>
+    <option value="#">Link3</option>
+    <option value="#">Link4</option>
+    <option value="about-us-page.html">About Us</option>
+<select>
+<input type=button value="Go" onclick="goToNewPage()" />
+    </li>
+    <div id="search"><input id="search" type="text" placeholder="Search" /></div>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<br><br>
+<h2>&emsp;Mayank Kaushik & Devendra Singh</h2>
+<font color="#232323">
+<div class="row">
+  <div class="column-half" id="page-width-1"><div class="column-style">We are pursing B.Tech in computer science in SRM IST and currently we are in our III year.<br></div></div>
+  <div class="column-half" id="page-width-2"><div class="column-style"><img src="aboutus.jpg">.</div></div>
+</div>
+<br><br><br>
+</font>
+</body>
+<hr>
+</html>

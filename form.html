@@ -1,0 +1,115 @@
+<html>
+<head>
+	<style>
+	body{
+	  background-image:url("background1.jpg");
+	}
+	label{
+		 width:150px;
+		 float:left;
+		}
+	input{
+	   width:120px;
+	   margin-left:5px;
+		}
+		form{
+			 background-image:url("background1.jpg");
+			margin-left:450px;
+			margin-top:150px;
+			border:inset blue 4px;
+			width:350px;
+			background:yellow;
+			padding:2em;
+			}
+
+	</style>
+	<script>
+	function validate1(){
+		  var username=document.getElementById("username").value
+		  var name=document.getElementById("name").value
+		  var detail=document.getElementById("details").value
+      var price=document.getElementById("price").value
+      var quantity=document.getElementById('quantity').value
+			 if(username=="")
+			  {
+				  alert("Username is blank")
+				   return false;
+			  }
+			   else if(name=="")
+			  {
+				  alert("Name is blank")
+				   return false;
+			  }
+			  else if(details=="")
+			  {
+				  alert("Details is blank")
+				   return false;
+			  }
+        else if(price=="")
+			  {
+				  alert("Price is blank")
+				   return false;
+			  }else if(quantity=="")
+			  {
+				  alert("Quantity is blank")
+				   return false;
+			  }
+			  else{
+				  return true;
+				  }
+		}
+
+	function validate2(){
+		  var name=document.getElementById("name").value
+			 if(name=="")
+			  {
+				  alert("Name is blank")
+				   return false;
+			  }
+			  else{
+			  return true;
+			  }
+		}
+
+	</script>
+</head>
+<body>
+
+<form action="data.php" method='post'>
+	<label style='width:200px; margin-left:100px;font-weight:bold;'>
+		Add Product</label>
+	<br>  <br>
+
+<label>Enter User name</label>
+<input name="username" id="username">
+<br>
+
+<label>Enter Product Name</label>
+<input name="name" id="name">
+<br>
+
+<label>Enter Product Details</label>
+<input name="details" id="details">
+<br>
+
+<label>Enter Product Price</label>
+<input name="price" id="price">
+<br>
+
+<label>Enter Product Quantity</label>
+<input name="quantity" id="quantity">
+<br>
+
+<input type='submit' name='button' value='Add Product'  onclick="return validate1()">
+
+<input type='submit' name='button' value='Search Product'  onclick="return validate2()">
+<br>
+<input type='submit' name='button' value='Remove Product'  onclick="return validate2()">
+<input type='submit' name='button' value='ShowAll Product'>
+<br>
+<input type='submit' name='button' value='Update Product'  onclick="return validate1()">
+<input type='reset' value='Reset'>
+
+</form>
+</body>
+</html>

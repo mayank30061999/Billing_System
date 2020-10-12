@@ -1,0 +1,47 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/Login.css">
+  <script>
+    function validate(){
+      var id=document.getElementById("id").value
+
+      var password=document.getElementById("pass").value
+      if(id=="")
+      {
+        alert("id is blank")
+        return false;
+      }
+
+      else if(password=="")
+      {
+        alert("Password is blank")
+        return false;
+      }
+      else{
+        return true;
+      }
+
+
+    }
+
+    </script>
+  </head>
+  <body background="background.jpg" class="form-design">
+    <div align="center">
+
+    <h2 id="log"><strong>Admin Login</strong></h2>
+
+        <form method="post" action="adminlogin.php" name="login-form"  onsubmit="return validate()">
+
+          <input class="input-design" type="text"  name="userid" id="id" placeholder="  Admin Id" />
+          <br>
+          <input class="input-design" type="password" name="password" id="pass" placeholder="  Password" />
+          <br>
+          <input class="submit-btn" type="submit" name="submit"/>
+
+<div aling="centre"><a href="login.html"><h2>User Login</h2></a></div>
+        </form>
+
+        </body>
+
+    </html>

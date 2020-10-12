@@ -1,0 +1,55 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/Login.css">
+  <script>
+    function validate(){
+      var name=document.getElementById("name").value
+      var address=document.getElementById("address").value
+      var password=document.getElementById("pass").value
+      if(name=="")
+      {
+        alert("Name is blank")
+        return false;
+      }
+
+      else if(password=="")
+      {
+        alert("Password is blank")
+        return false;
+      }
+      else if(address=="")
+      {
+        alert("Address is blank")
+        return false;
+      }
+      else{
+        return true;
+      }
+
+
+    }
+
+    </script>
+  </head>
+  <body background="background.jpg" class="form-design">
+    <div align="center">
+
+    <h2 id="log">User Signup</h2>
+
+        <form method="post" action="usersignup.php" name="login-form"  onsubmit="return validate()">
+
+          <input class="input-design" type="text"   name="name" id="name" placeholder="Name" />
+          <br>
+          <input class="input-design" type="text" name="address" id="address" placeholder="Address" />
+          <br>
+          <input class="input-design" type="password" name="pass" id="pass" placeholder="Password" />
+          <br>
+          <input class="submit-btn" type="submit" name="submit"/>
+          <div><h2>Already Have A Account?<a href="login.html">Login</a></h2></div>
+
+        </form>
+        </div>
+        <div></div>
+        </body>
+
+    </html>

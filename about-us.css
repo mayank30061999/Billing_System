@@ -1,0 +1,90 @@
+
+body{
+
+color:#919191 ;
+}
+
+
+h2{
+
+	margin-left: 20px;
+}
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+#heading {
+
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-top: 25;
+	padding-bottom: 15;
+	text-align: center;
+	font-weight: bold;
+    font-size: 30px ;
+    font-family:  'Merriweather', serif;
+}
+#navigation,#drop-down,#search {
+display: inline;
+}
+
+li {
+
+	display: inline; 
+ text-decoration: none;
+ padding-left: : 10px;
+ padding-right: 10px;
+}
+a {
+
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+#drop-down{
+	padding-right: 10px;
+	padding-left: 10px;
+   width: 80px;
+}
+#search{padding-right: 10px;padding-left: 10px;
+	width: 25%;
+	margin-left: 600px;}
+ul{
+	width: 50%;
+}
+nav{
+	border-bottom: 1px solid grey;
+	border-top: 1px solid grey;
+
+}
+a:hover {
+color: green;
+
+}
+.column-half {
+    float: left;
+    width: 50%; 
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color:#FFFFFF;
+    color:#979797;
+}
+.column-style{
+
+	margin-left: 45px;
+	margin-right: 50px;
+	text-align: justify;
+	
+}
+
+#page-width-1{
+
+	width: 70%;
+}
+#page-width-2{
+
+	width: 30%;
+}
